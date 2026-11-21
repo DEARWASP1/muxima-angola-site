@@ -74,13 +74,6 @@
     }
     button:active { transform: scale(0.97); }
     .yes { background: #ffcc00; color: #000; }
-    .no { background: transparent; color: #fff; border: 1px solid rgba(255, 255, 255, 0.3); }
-    .msg {
-      margin-top: 20px;
-      font-size: 14px;
-      color: #ff6b6b;
-      display: none;
-    }
     .foot {
       margin-top: 28px;
       font-size: 12px;
@@ -96,17 +89,12 @@
     <p class="question">Confirma que é maior de 18 anos?</p>
     <div class="buttons">
       <button class="yes" id="yes">Sim, confirmo</button>
-      <button class="no" id="no">Não</button>
     </div>
-    <p class="msg" id="msg">Lamentamos, o acesso é permitido apenas a maiores de 18 anos.</p>
     <p class="foot">Jogue com responsabilidade.</p>
   </main>
   <script>
     document.getElementById('yes').addEventListener('click', function () {
       window.location.href = 'https://muxima-angola.online/';
-    });
-    document.getElementById('no').addEventListener('click', function () {
-      document.getElementById('msg').style.display = 'block';
     });
   </script>
 </body>
