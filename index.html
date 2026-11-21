@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muxima Bet Angola</title>
+  <meta name="robots" content="noindex">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: radial-gradient(circle at top, #3a0a0a 0%, #120303 60%, #000 100%);
+      color: #fff;
+    }
+    .card {
+      width: 100%;
+      max-width: 440px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 204, 0, 0.35);
+      border-radius: 20px;
+      padding: 40px 28px;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+    }
+    .logo {
+      font-size: 40px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      color: #ffcc00;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+    .logo span { color: #e11d2a; }
+    h1 {
+      margin-top: 24px;
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .question {
+      margin-top: 28px;
+      font-size: 18px;
+      color: #ddd;
+    }
+    .badge {
+      display: inline-block;
+      margin-top: 16px;
+      width: 64px;
+      height: 64px;
+      line-height: 60px;
+      border-radius: 50%;
+      border: 3px solid #e11d2a;
+      font-size: 22px;
+      font-weight: 800;
+    }
+    .buttons {
+      margin-top: 28px;
+      display: flex;
+      gap: 12px;
+    }
+    button {
+      flex: 1;
+      padding: 16px;
+      font-size: 17px;
+      font-weight: 700;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.1s, opacity 0.2s;
+    }
+    button:active { transform: scale(0.97); }
+    .yes { background: #ffcc00; color: #000; }
+    .no { background: transparent; color: #fff; border: 1px solid rgba(255, 255, 255, 0.3); }
+    .msg {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #ff6b6b;
+      display: none;
+    }
+    .foot {
+      margin-top: 28px;
+      font-size: 12px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="logo">Muxima <span>Bet</span></div>
+    <h1>Seja bem-vindo à Muxima Bet Angola</h1>
+    <div class="badge">18+</div>
+    <p class="question">Confirma que é maior de 18 anos?</p>
+    <div class="buttons">
+      <button class="yes" id="yes">Sim, confirmo</button>
+      <button class="no" id="no">Não</button>
+    </div>
+    <p class="msg" id="msg">Lamentamos, o acesso é permitido apenas a maiores de 18 anos.</p>
+    <p class="foot">Jogue com responsabilidade.</p>
+  </main>
+  <script>
+    document.getElementById('yes').addEventListener('click', function () {
+      window.location.href = 'https://muxima-angola.online/';
+    });
+    document.getElementById('no').addEventListener('click', function () {
+      document.getElementById('msg').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
